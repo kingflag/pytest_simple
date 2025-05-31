@@ -1,17 +1,18 @@
-# pytest_simple
+# pytest_simple Project
 
-## intall python
+## Environment Setup
 
-    windows 
-    ```bash
-    winget install python3.11
-    ```
+### Install Python
+- **Windows**:
+  ```bash
+  winget install python3.11
+  ```
 
-    linux/macos
-    ```bash
+- **linux/macos**:
+  ```bash
     sudo apt-get install python3.11
-    ```
-    check if python is installed by typing python in the terminal. if you can see the python version, then python is installed. if not, then you need to add python to path if not added automatically.
+  ```
+  check if python is installed by typing python in the terminal. if you can see the python version, then python is installed. if not, then you need to add python to path if not added automatically.
 
 ## create requirements.txt file
  this file will contain all the dependencies of the project. It will be used to install the dependencies of the project. 
@@ -24,29 +25,32 @@ python -m venv venv
 
 ### activate venv
 
-linux/macos
+- **linux/macos**:
 ```bash
 source venv/bin/activate
 ```
 
-windows powershell
-```bash
+- **Windows**:
+```powershell
 .\venv\Scripts\activate.ps1
 ```
-  this will activate the virtual environment. 
-  if you can see (venv) in the terminal, then the virtual environment is activated.
-  if not,you need grant execute permission to the activate.ps1 file.
-  ```powershell
+this will activate the virtual environment. 
+if you can see (venv) in the terminal, then the virtual environment is activated.
+if not,you need grant execute permission to the activate.ps1 file.
+  
+```powershell
   Get-ExecutionPolicy -Scope CurrentUser
   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
   Remove-Item -Recurse -Force venv
   python -m venv venv
-  ```
+```
+
 ### exit venv
+
 ```bash
 deactivate
 ```
-  this will exit the virtual environment.
+this will exit the virtual environment.
 
 
 ## install dependencies in the venv
